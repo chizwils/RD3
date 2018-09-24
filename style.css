@@ -1,0 +1,264 @@
+
+a{
+	color: black !important;
+}
+body{
+	margin-left: 1%!important;
+	-webkit-transition: all 3s ease-in;
+}
+.brand-logo img{
+	width: 140px;
+	height: 45px;
+	margin-top: 10px;
+	
+}
+/***NAV**/
+ 
+nav
+{
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+}
+
+nav li{
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
+.menu a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 12.3px;
+	color: #000000;
+	letter-spacing: 0.2px;
+	
+}
+nav a:hover{
+	background-color: transparent!important;
+	font-weight: bold;
+}
+.brand-logo{
+	margin-left: 1.5rem;
+}
+h2{
+	font-size: 3rem;
+}
+h3{
+	font-weight: 200;
+	font-size: 2rem;
+	letter-spacing: 0.02rem;
+	width: 55%;
+}
+h4{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+.full{
+	height: 100vh;
+}
+.form-btn button{
+	width: 100%;
+	border-radius: 5px!important;
+}
+
+/*HEADER*/
+header .intro-header h2{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 72px;
+	margin-bottom: 7%;
+	
+}
+.intro-subheader h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 41px;
+	letter-spacing: 5%;
+	color: #312E2E;
+	margin-bottom: 3%;
+	
+}
+.intro-subheader span{
+	padding-bottom: 5px;
+}
+.intro-subheader #c{
+	border-bottom: 2px solid #F9F120;
+	
+	
+}
+.intro-subheader #p{
+	border-bottom: 2px solid #F920BC;
+	
+}
+.intro-subsubheader h4{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 5%;
+	
+}
+.cta button{
+	background-color: #FB2E2E !important;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	font-size: 0.8rem;
+	line-height: 20px;
+	width: 20%;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+	
+}
+.cta button:hover{
+	background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px); 
+}
+.cta button:active{
+	
+}
+
+/** SECTION**/
+.section-title{
+	border-bottom: 9px solid red;
+	width: fit-content;
+	height: 25px;
+	padding-right:1%;
+	margin-bottom: 6%;
+	
+}
+/** PROCESS*/
+.process-title {
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 6%;
+	color: #722CE5;
+		
+}
+.process-title span{
+	font-size: 100px;
+	color: #F92054;
+}
+.process-header h5{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	color:#312e2e;
+}
+.desc p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing:0.04px;
+	
+}
+.contact .section-title{
+	border-bottom: 9px solid #806bff;
+}
+.work .section-title{
+	border-bottom: 9px solid #6dc2ff;
+}
+.process-section .section-title{
+	border-bottom: 9px solid #ff9a24;
+}
+/**ARROW SVg***/
+.arrow_1{
+	
+	height: 140px;
+}
+.process-section svg {
+	stroke-linecap: round;
+	stroke: #22afdb;
+}
+/*--FORM---*/
+.input-field input, textarea{
+	
+	box-shadow: none!important;
+	box-sizing: border-box!important;
+	border: 1px solid #fb2e2e !important;
+	border-radius: 6px!important;
+	padding: 10px!important;
+	
+}
+.input-field input:focus{
+	border: 2px solid #fb2e2e!important;
+}
+.input-field input[type=text], .input-field input[type=tel],.input-field input[type=email], textarea{
+	color: #fb2e2e!important;
+	font-family: monospace;
+	
+}
+textarea{
+	min-height: 150px!important;
+}
+::-webkit-input-placeholder{
+	color: #fb2e2e;
+}
+
+/***FOOTER**/
+
+.footer-in{
+	margin-left: 10%;
+}
+
+.left-footer {
+	margin-top: 4%;
+}
+.social-icon{
+	margin-top: 6%;
+}
+.copyright{
+	font-family:'Roboto Mono', monospace;
+	font-size: 13px;
+	font-weight: 300;
+	
+	
+}
+.social-icon a{
+	color: white!important;
+	padding-right:  10px;
+	
+	
+}
+
+.social-icon ul li{
+	display: inline-block;
+	
+	
+	
+}
+
+.social-icon img{
+	height: 16px;
+}
+.contact-footer{
+	font-family:'Roboto Mono', monospace;
+	font-size: 13px;
+	font-weight: 300;
+	position: relative;
+	
+}
+.contact-footer img{
+	padding-right: 10px;
+	
+}
+
+.contact-footer-header{
+	border-bottom: 9px solid #Fb2e2e;
+	width: fit-content;
+	height: 25px;
+	padding-right:1%;
+	margin-bottom: 4%;
+	
+	
+}
+
