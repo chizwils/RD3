@@ -170,10 +170,31 @@ header .intro-header h2{
 .process-section .section-title{
 	border-bottom: 9px solid #ff9a24;
 }
+.process-list{
+	
+	position: relative;
+	
+	
+}
+.arrows{
+	z-index: -1;
+	
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+.arrows svg{
+	stroke-linecap: round;
+	stroke: #22afdb;
+}
 /**ARROW SVg***/
-.arrow_1{
+.arrow_1,.arrow_2{
 	
 	height: 140px;
+}
+.arrow_2{
+	
+	
 }
 .process-section svg {
 	stroke-linecap: round;
@@ -259,6 +280,37 @@ textarea{
 	padding-right:1%;
 	margin-bottom: 4%;
 	
-	
 }
+
+
+/**** RESPONSIVE ******/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	.arrows {
+		display:none;
+	}
+	
+	
+	} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.arrows {
+		display:none;
+	}
+	
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
 
