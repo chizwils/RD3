@@ -3,20 +3,37 @@
     <head>
 	<title>RD3 Home</title>
 	<!-- Compiled and minified CSS -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Poppins:400,500|Raleway:200,400,500|Roboto+Mono" rel="stylesheet">	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Poppins:400,500|Raleway:200,400,500|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 	</script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 	<script>
 		$(document).ready(function(){
+			var mouse = $(".icon-scroll")
 			$('select').formSelect();
+			$('.sidenav').sidenav();
 			$('.carousel.carousel-slider').carousel({
-    fullWidth: true
+    fullWidth: true,
+				indicators:true
   });
+			$(window).scroll(function(){
+				if ($(this).scrollTop()>40){
+					mouse.hide();
+				}
+				else{
+					mouse.show();
+				}
+			})
+		
+		
 		});
 		
 		</script>
@@ -32,7 +49,8 @@
 		<nav class="white">
 			<div class="nav-wrapper">
 				<a href="#" class="brand-logo "><img src="images/RD3%20-%20whiteBG.png"></a>
-				<ul class="right menu">
+				<a href="#" data-target='mobile-demo' class='sidenav-trigger'><i class="material-icons">menu</i></a>
+				<ul id ='nav-mobile'class="right menu hide-on-med-and-down">
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Our Process</a></li>
 					<li><a href="#">Works</a></li>
@@ -41,8 +59,16 @@
 				</ul>
 			</div>
 		</nav>
+		<!---MOBILE COLLAPSE-->
+		<ul class="sidenav" id="mobile-demo">
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Our Process</a></li>
+					<li><a href="#">Works</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 		<div class="content row container ">
-			<div class="col m12">
+			<div class="col m12 s12">
 				<div class="intro-header">
 					<h2>Digital Design and Development Studio</h2>
 				</div>
@@ -53,19 +79,46 @@
 				<div class="intro-subsubheader">
 					<h4>Challenging the status quo is what we are good at.</h4>
 				</div>
-				<div class="cta">
+				<div class="cta col s12 m12">
 					<button class='btn '> Start a project</button>
 				</div>
 			</div>
 		</div>
+		<div class='icon-scroll'></div>
 	</header>
-	<!----OUR PROCESS--->
-	<section class="section process-section">
-		<div class="container pre-process">
-			<div class="row">
-				<div class="col m4">
+
+	<!----OUR SERVICES--->
+	<section class="section service">
+		<div class="section-title">
+				<h4>OUR SERVICES</h4>
+			</div>
+		<div class="container pre-process ">
+			<div class="row" data-aos='fade-up'>
+				<div class="col m6 preprocess-desc">
 					<div class="">
-						<img>
+						<img src="images/social/ux.svg">
+					</div>
+					<div>
+						<h5 class="content-title">UX DESIGN</h5>
+					</div>
+					<div class="content">
+						<p>We design beautiful and engagin experiences for your products that keep your users coming back.</p>
+					</div>
+				</div>
+				<div class="col m6 preprocess-desc">
+					<div class="">
+						<img src='images/social/web.svg'>
+					</div>
+					<div>
+						<h5 class="content-title">Web Development</h5>
+					</div>
+					<div class='content'>
+						<p>We create web applications that are mobile responsive and functional.</p>
+					</div>
+				</div>
+				<!--<div class="col m4 preprocess-desc">
+					<div class="">
+						<img src="images/social/mobile.svg">
 					</div>
 					<div>
 						<h5>UX DESIGN</h5>
@@ -73,132 +126,122 @@
 					<div>
 						<p>We design beautiful and engagin experiences for your products that keep your users coming back.</p>
 					</div>
-				</div>
-				<div class="col m4">
-					<div class="">
-						LOGO
-					</div>
-					<div>
-						<h5>UX DESIGN</h5>
-					</div>
-					<div>
-						<p>We design beautiful and engagin experiences for your products that keep your users coming back.</p>
-					</div>
-				</div>
-				<div class="col m4">
-					<div class="">
-						LOGO
-					</div>
-					<div>
-						<h5>UX DESIGN</h5>
-					</div>
-					<div>
-						<p>We design beautiful and engagin experiences for your products that keep your users coming back.</p>
-					</div>
-				</div>
-
-			</div></div>
-			<!----PROCESS--->
-
-			<div class='container process'>
-				<div class="section-title"><h4>OUR PROCESS</h4></div>
-				<div class="container">
-					<div class="process-list">
-						<div class='arrows'><svg xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-									<line x1="290" y1="250" x2="550" y2="250" stroke-width="3"/>
-									<line x1="535" y1="235" x2="550" y2="250"  stroke-width="3"/>
-									<line x1="535" y1="265" x2="550" y2="250" stroke-width="3"/>
-							        <!-----AFTER DESIGN----->
-									<line x1="850" y1="250" x2="960" y2="250" stroke-width="3"/>
-									<line x1="960" y1="250" x2="960" y2="510" stroke-width="3"/>
-									<line x1="620" y1="510" x2="960" y2="510" stroke-width="3"/>
-							
-									<line x1="620" y1="510" x2="635" y2="495"  stroke-width="3"/>
-									<line x1="620" y1="510" x2="635" y2="525" stroke-width="3"/>
-									<!------ BEFORE DDEVELOPMENT--->
-									<line x1="50" y1="510" x2="290" y2="510" stroke-width="3"/>
-									<line x1="50" y1="510" x2="50" y2="720" stroke-width="3"/>
-									<line x1="50" y1="720" x2="600" y2="720" stroke-width="3"/>
-							
-									<line x1="585" y1="705" x2="600" y2="720"  stroke-width="3"/>
-									<line x1="585" y1="735" x2="600" y2="720" stroke-width="3"/>
-							</svg>
-						</div>
-						
-						<div class="center process-title">
-							Design thinking at the heart of everything we do <span>.</span>
-						</div>
-						<div class="row ">
-							<div class=" col m3 center process-header">
-								<h5 class="">Research</h5>
-								<div class="desc ">
-									<p>We aim to understand your needs and that of your target audience</p>
-								</div>
-
-							</div>
-							
-							<div class="col m4 arrow_1">
-								
-							</div>
-							
-							<div class="col m3 center process-header">
-								<h5 class="">Design</h5>
-								<div class="desc">
-									<p>We employ design thinking to prototype solutions that match your core needs</p>
-								</div>
-							</div>
-							
-							<div class="col m2 arrow_2">
-								
-
-							</div>
-						</div>
-
-						<!---Second Row-->
-						<div class="row">
-							
-							<div class="col m4">
-							</div>
-							
-							<div class="col m3 center process-header">
-								<h5>Development</h5>
-								<div class="desc"><p>We dive into building your product with efficiency</p>
-								</div>
-							</div>
-							
-							<div class="col m5">
-								
-							</div>
-						</div>
-						<!------Third Row--->
-						<div class="row">
-							
-							<div class="col m7">
-								
-							</div>
-							
-							<div class="col m3 center process-header">
-								<h5>Delivery</h5>
-								<div class="desc"><p>We deliver results that represents professionalism</p></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
+				</div>-->
 
 			</div>
+		</div>
+	</section>
+	<!----OUR PROCESS--->
+	<section class="section process-section">
 		
+		<!----PROCESS--->
+
+		<div class=' process'>
+			<div class="section-title">
+				<h4>OUR PROCESS</h4>
+			</div>
+			<div class="container">
+				<div class="process-list">
+					<div class='arrows'><svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none slice">
+							<!--<line x1="290" y1="250" x2="550" y2="250" stroke-width="3"/>-->
+							<line x1="25%" y1="32%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120'/>
+							<line x1="53%" y1="30%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120'/>
+							<line x1="53%" y1="34%" x2="55%" y2="32%" stroke-width="3"stroke='#F9F120' />
+							<!-----AFTER DESIGN----->
+							<line x1="85%" y1="32%" x2="95%" y2="32%" stroke-width="3" stroke='#F920BC'/>
+							<line x1="95%" y1="32%" x2="95%" y2="57%" stroke-width="3"stroke='#F920BC' />
+							<line x1="62%" y1="57%" x2="95%" y2="57%" stroke-width="3"stroke='#F920BC' />
+
+							<line x1="62%" y1="57%" x2="63.5%" y2="55%" stroke-width="3" stroke='#F920BC'/>
+							<line x1="62%" y1="57%" x2="63.5%" y2="59%" stroke-width="3" stroke='#F920BC'/>
+							<!------ BEFORE DDEVELOPMENT--->
+							<line x1="50" y1="57%" x2="29%" y2="57%" stroke-width="3" />
+							<line x1="50" y1="57%" x2="50" y2="85%" stroke-width="3" />
+							<line x1="50" y1="85%" x2="55%" y2="85%" stroke-width="3" />
+
+							<line x1="53%" y1="83%" x2="55%" y2="85%" stroke-width="3" />
+							<line x1="53%" y1="87%" x2="55%" y2="85%" stroke-width="3" />
+						</svg>
+					</div>
+
+					<div class="center process-title" data-aos='fade-right'>
+						Design thinking at the heart of everything we do <span>.</span>
+					</div>
+					<div class="row " data-aos='fade-left'>
+						<div class=" col m3 s12 center process-header">
+							<h5 class="" style ='color:#FF9417'>Research</h5>
+							<div class="desc ">
+								<p>We aim to understand your needs and that of your target audience</p>
+							</div>
+
+						</div>
+
+						<div class="col m4 s12 arrow_1">
+
+						</div>
+
+						<div class="col m3 s12 center process-header">
+							<h5 class="" style='color:#F920BC'>Design</h5>
+							<div class="desc">
+								<p>We employ design thinking to prototype solutions that match your core needs</p>
+							</div>
+						</div>
+
+						<div class='col m4 s12'>
+						</div>
+					</div>
+
+					<!---Second Row-->
+					<div class="row" data-aos='fade-right'>
+
+						<div class="col m4 s12 arrow_1">
+						</div>
+
+						<div class="col m3  s12 center process-header">
+							<h5>Development</h5>
+							<div class="desc">
+								<p>We dive into building your product with efficiency</p>
+							</div>
+						</div>
+
+						<div class="col m5">
+
+						</div>
+					</div>
+					<!------Third Row--->
+					<div class="row" data-aos='fade-left'>
+
+						<div class="col m7 s12 arrow_1">
+
+						</div>
+
+						<div class="col m3 center process-header">
+							<h5>Delivery</h5>
+							<div class="desc">
+								<p>We deliver results that represents professionalism</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
 	</section>
 	<!----WORKS--->
-	<section class="work container">
-		<div class="section-title"><h4 >WORKS</h4></div>
-		<div  class='container'>
-		<div class="carousel carousel-slider">
-			<a class="carousel-item" href="#one!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
-			<a class="carousel-item" href="#two!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
-			<a class="carousel-item" href="#three!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
-			<a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
-			</div></div>
+	<section class="work ">
+		<div class="section-title">
+			<h4>WORKS</h4>
+		</div>
+		<div class='container'>
+			<div class="carousel carousel-slider">
+				<a class="carousel-item" href="#one!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
+				<a class="carousel-item" href="#two!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
+				<a class="carousel-item" href="#three!"><img src="images/alps-austria-daylight-1428787.jpg"></a>
+
+			</div>
+		</div>
 
 
 	</section>
@@ -207,27 +250,27 @@
 
 	</section>
 	<!----CONTACT--->
-	<section class="section   contact container">
+	<section class="section   contact ">
 		<div class="section-title">
 			<h4>START A PROJECT</h4>
 		</div>
 		<!---FORM-->
 		<div class="container">
-			<form action="#" class="container">
+			<form action="mailto:chizwil@gmail.com" class="container" method="post">
 				<!--Fullname-->
 				<div class="full_name input-field">
 					<input id="full_name" type="text" class="validate" placeholder="Full Name">
-					
+
 				</div>
 				<!--Email-->
 				<div class="email input-field">
 					<input id="email" type="email" class="validate" placeholder="Email">
-					
-					</div>
+
+				</div>
 				<!--Phone-->
 				<div class="phone input-field">
 					<input id="phone" type="tel" class="validate" placeholder="Phone">
-					
+
 				</div>
 				<!---choose option-->
 				<div class="input-field">
@@ -244,18 +287,18 @@
 				<!--Budget Range-->
 				<div class=" budget input-field">
 					<input id='budget' type="text" class="validate" placeholder="Budget">
-					
+
 
 				</div>
 				<!--Comment-->
 				<div class=' comment input-field'>
 					<textarea id='comment' class="materialize-textarea" placeholder="Comments..."></textarea>
-					
+
 				</div>
 				<!---Submit Buuton-->
 
-				<div class="form-btn">
-					<button class="btn center" name='action'>Send Message</button>
+				<div class="form-btn ">
+					<button class="btn center sub-btn" name='action'>Send Message</button>
 				</div>
 			</form>
 		</div>
@@ -269,7 +312,9 @@
 			</div>
 			<!--Contact-->
 			<div class="col m4 contact-footer">
-				<div class='contact-footer-header'><h5>Contact</h5></div>
+				<div class='contact-footer-header'>
+					<h5>Contact</h5>
+				</div>
 				<div><img src="images/social/phone.svg">832-364-8909</div>
 				<div><img src="images/social/email.svg">hello@rd3studio.com</div>
 			</div>
@@ -278,16 +323,19 @@
 				<ul>
 					<li><a href="#"><img src="images/social/facebook.svg"></a></li>
 					<li><a href="#"><img src="images/social/instagram.svg"></a></li>
-					<li><a  href="#"><img src="images/social/behance.svg"></a></li>
-					<li><a  href="#"><img src="images/social/linkedin.svg"></a></li>
-					<li><a  href="#"><img src="images/social/twitter.svg"></a></li>
+					<li><a href="#"><img src="images/social/behance.svg"></a></li>
+					<li><a href="#"><img src="images/social/linkedin.svg"></a></li>
+					<li><a href="#"><img src="images/social/twitter.svg"></a></li>
 				</ul>
 			</div>
 
 		</div>
 
 	</footer>
-
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
