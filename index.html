@@ -3,7 +3,8 @@
     <head>
 	<title>RD3 Home</title>
 	<!-- Compiled and minified CSS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Poppins:400,500|Raleway:200,400,500|Roboto+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -50,23 +51,23 @@
 			<div class="nav-wrapper">
 				<a href="#" class="brand-logo "><img src="images/RD3%20-%20whiteBG.png"></a>
 				<a href="#" data-target='mobile-demo' class='sidenav-trigger'><i class="material-icons">menu</i></a>
-				<ul id ='nav-mobile'class="right menu hide-on-med-and-down">
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Our Process</a></li>
+				<ul id='nav-mobile' class="right menu hide-on-med-and-down">
+					<li><a href="#service-section">Services</a></li>
+					<li><a href="#process-section">Our Process</a></li>
 					<li><a href="#">Works</a></li>
 					<li><a href="#">Clients</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact-section">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!---MOBILE COLLAPSE-->
 		<ul class="sidenav" id="mobile-demo">
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Our Process</a></li>
-					<li><a href="#">Works</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Our Process</a></li>
+			<li><a href="#">Works</a></li>
+			<li><a href="#">Clients</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 		<div class="content row container ">
 			<div class="col m12 s12">
 				<div class="intro-header">
@@ -80,18 +81,18 @@
 					<h4>Challenging the status quo is what we are good at.</h4>
 				</div>
 				<div class="cta col s12 m12">
-					<button class='btn '> Start a project</button>
+					<button class='btn ' onClick="document.getElementById('contact-section').scrollIntoView();"> Start a project</button>
 				</div>
 			</div>
 		</div>
-		<div class='icon-scroll'></div>
+		<div class='icon-scroll hide-on-med-and-down'></div>
 	</header>
 
 	<!----OUR SERVICES--->
-	<section class="section service">
+	<section class="section service" id='service-section'>
 		<div class="section-title">
-				<h4>OUR SERVICES</h4>
-			</div>
+			<h4>OUR SERVICES</h4>
+		</div>
 		<div class="container pre-process ">
 			<div class="row" data-aos='fade-up'>
 				<div class="col m6 preprocess-desc">
@@ -132,8 +133,8 @@
 		</div>
 	</section>
 	<!----OUR PROCESS--->
-	<section class="section process-section">
-		
+	<section class="section process-section" id="process-section">
+
 		<!----PROCESS--->
 
 		<div class=' process'>
@@ -142,18 +143,18 @@
 			</div>
 			<div class="container">
 				<div class="process-list">
-					<div class='arrows'><svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none slice">
+					<div class='arrows'><svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
 							<!--<line x1="290" y1="250" x2="550" y2="250" stroke-width="3"/>-->
-							<line x1="25%" y1="32%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120'/>
-							<line x1="53%" y1="30%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120'/>
-							<line x1="53%" y1="34%" x2="55%" y2="32%" stroke-width="3"stroke='#F9F120' />
+							<line x1="25%" y1="32%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120' />
+							<line x1="53%" y1="30%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120' />
+							<line x1="53%" y1="34%" x2="55%" y2="32%" stroke-width="3" stroke='#F9F120' />
 							<!-----AFTER DESIGN----->
-							<line x1="85%" y1="32%" x2="95%" y2="32%" stroke-width="3" stroke='#F920BC'/>
-							<line x1="95%" y1="32%" x2="95%" y2="57%" stroke-width="3"stroke='#F920BC' />
-							<line x1="62%" y1="57%" x2="95%" y2="57%" stroke-width="3"stroke='#F920BC' />
+							<line x1="85%" y1="32%" x2="95%" y2="32%" stroke-width="3" stroke='#F920BC' />
+							<line x1="95%" y1="32%" x2="95%" y2="57%" stroke-width="3" stroke='#F920BC' />
+							<line x1="62%" y1="57%" x2="95%" y2="57%" stroke-width="3" stroke='#F920BC' />
 
-							<line x1="62%" y1="57%" x2="63.5%" y2="55%" stroke-width="3" stroke='#F920BC'/>
-							<line x1="62%" y1="57%" x2="63.5%" y2="59%" stroke-width="3" stroke='#F920BC'/>
+							<line x1="62%" y1="57%" x2="63.5%" y2="55%" stroke-width="3" stroke='#F920BC' />
+							<line x1="62%" y1="57%" x2="63.5%" y2="59%" stroke-width="3" stroke='#F920BC' />
 							<!------ BEFORE DDEVELOPMENT--->
 							<line x1="50" y1="57%" x2="29%" y2="57%" stroke-width="3" />
 							<line x1="50" y1="57%" x2="50" y2="85%" stroke-width="3" />
@@ -163,13 +164,14 @@
 							<line x1="53%" y1="87%" x2="55%" y2="85%" stroke-width="3" />
 						</svg>
 					</div>
+					
 
 					<div class="center process-title" data-aos='fade-right'>
 						Design thinking at the heart of everything we do <span>.</span>
 					</div>
 					<div class="row " data-aos='fade-left'>
 						<div class=" col m3 s12 center process-header">
-							<h5 class="" style ='color:#FF9417'>Research</h5>
+							<h5 class="" style='color:#FF9417'>Research</h5>
 							<div class="desc ">
 								<p>We aim to understand your needs and that of your target audience</p>
 							</div>
@@ -177,7 +179,17 @@
 						</div>
 
 						<div class="col m4 s12 arrow_1">
+							<div class="arrow-small hide-on-med-and-up">
+								<svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
 
+									<line x1="50%" y1="0%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="47%" y1="90%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="50%" y1="100%" x2="53%" y2="90%" stroke-width="3" />
+
+
+
+								</svg>
+							</div>
 						</div>
 
 						<div class="col m3 s12 center process-header">
@@ -195,6 +207,17 @@
 					<div class="row" data-aos='fade-right'>
 
 						<div class="col m4 s12 arrow_1">
+							<div class="arrow-small hide-on-med-and-up ">
+								<svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+
+									<line x1="50%" y1="0%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="47%" y1="90%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="50%" y1="100%" x2="53%" y2="90%" stroke-width="3" />
+
+
+
+								</svg>
+							</div>
 						</div>
 
 						<div class="col m3  s12 center process-header">
@@ -212,10 +235,20 @@
 					<div class="row" data-aos='fade-left'>
 
 						<div class="col m7 s12 arrow_1">
+							<div class="arrow-small hide-on-med-and-up">
+								<svg width="100%" height="100%" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
 
+									<line x1="50%" y1="0%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="47%" y1="90%" x2="50%" y2="100%" stroke-width="3" />
+									<line x1="50%" y1="100%" x2="53%" y2="90%" stroke-width="3" />
+
+
+
+								</svg>
+							</div>
 						</div>
 
-						<div class="col m3 center process-header">
+						<div class="col m3 s12 center process-header">
 							<h5>Delivery</h5>
 							<div class="desc">
 								<p>We deliver results that represents professionalism</p>
@@ -250,7 +283,7 @@
 
 	</section>
 	<!----CONTACT--->
-	<section class="section   contact ">
+	<section class="section   contact " id="contact-section">
 		<div class="section-title">
 			<h4>START A PROJECT</h4>
 		</div>
@@ -334,7 +367,7 @@
 	</footer>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		AOS.ini t();
 	</script>
 </body>
 
